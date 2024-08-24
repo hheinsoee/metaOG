@@ -1,6 +1,6 @@
 {
   "name": "meta-og",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "open-graph",
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
