@@ -25,7 +25,6 @@ import { metaOG } from "meta-og";
     console.error({ error });
   }
 })();
-``;
 ```
 
 ## Output Example
@@ -41,13 +40,19 @@ The output of metaOG is an object containing the fetched Open Graph data:
   //others....
 }
 ```
+
 ## Key Features
+
 - Lightweight: Simple and easy to integrate with any Node.js or web application.
 - Flexible: Supports a wide range of Open Graph metadata properties.
 - Promise-based: Easily integrates with async/await or .then/.catch syntax.
+
 ## Common Use Cases
+
 - Displaying rich link previews.
 - Enhancing social media sharing with detailed OG data.
 - Building custom link preview components.
+
 ## Error Handling
+
 - Make sure to handle errors properly when fetching OG data. The example above shows a basic structure using try/catch for async/await syntax or .catch for promise-based syntax.

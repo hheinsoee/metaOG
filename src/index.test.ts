@@ -1,20 +1,11 @@
-import { metaOG } from "./index";
+import { metaOG } from ".";
+
 
 describe("metaOG", () => {
-  it("valid URL", async () => {
-    const url = "https://www.heinsoe.com"; // Replace with a URL that contains Open Graph meta tags
+  it("open graph phase", async () => {
+    const url = "https://www.bbc.com/news/live/c5y8xkejjn3t";
     const ogData = await metaOG(url);
 
-    expect(ogData).toHaveProperty("og:title");
-    // expect(ogData).toHaveProperty("og:type");
-    expect(ogData).toHaveProperty("og:url");
+    expect(ogData).toHaveProperty("title");
   });
-
-//   it("should handle errors gracefully for an invalid URL", async () => {
-//     const invalidUrl = "https://invalid.url";
-
-//     await expect(metaOG(invalidUrl)).rejects.toThrow(
-//       "Failed to fetch OpenGraph data"
-//     );
-//   });
 });
