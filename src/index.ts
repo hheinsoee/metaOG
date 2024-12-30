@@ -1,4 +1,4 @@
-interface MetaResult {
+export interface MetaResult {
   title: string;
   description: string;
   [key: string]: string;
