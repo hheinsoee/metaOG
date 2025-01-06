@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "meta-og": "^0.0.5",
+    "meta-og": "^0.0.9",
     "next": "15.1.3",
+    "puppeteer": "^23.11.1",
+    "puppeteer-core": "^23.11.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

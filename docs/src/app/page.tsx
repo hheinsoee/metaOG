@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import metaOG from "./action";
+import OG from "./action";
 
 export default function Home() {
   const [data, setData] = useState<any>(null);
@@ -11,8 +11,14 @@ export default function Home() {
     setLoading(true);
     setData(null);
     setErr(null);
-    return await metaOG(url)
-      .then(setData)
+    return await OG(url)
+      .then((data) => {
+        if (data.error) {
+          setErr(data.error);
+        } else {
+          setData(data);
+        }
+      })
       .catch(setErr)
       .finally(() => setLoading(false));
   };

@@ -1,27 +1,40 @@
+// {
+//   "compilerOptions": {
+//     "target": "ESNext",
+//     "module": "ESNext",
+//     "moduleResolution": "Node",
+//     "declaration": true,
+//     "declarationDir": "./dist/types",
+//     "emitDeclarationOnly": false,
+//     "outDir": "./dist",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "skipLibCheck": true,
+//     "resolveJsonModule": true,
+//     "allowSyntheticDefaultImports": true,
+//     "sourceMap": true
+//   },
+//   "include": ["src/**/*"],
+//   "exclude": ["node_modules", "dist", "test"]
+// }
 {
   "compilerOptions": {
-    // "target": "es5",
-    "module": "esnext",
-    "strict": true,
-    "moduleResolution": "node",
-    "declaration": true,
-    "declarationMap": true,
-    "esModuleInterop": true,
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "target": "es2019",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": [
-      "es2019",
-      "dom"
-    ],
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "rootDir": "./src", // Ensures the base directory for source files is explicitly set
+    "outDir": "./dist", // Output directory for compiled files
+    "declaration": true, // Generate declaration files
+    "declarationDir": "./dist/types", // Separate directory for type definitions
+    "declarationMap": true, // Generates source maps for .d.ts files
+    "emitDeclarationOnly": false, // Emit JavaScript files along with declaration files
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from CommonJS modules
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "resolveJsonModule": true, // Support importing JSON modules
+    "allowSyntheticDefaultImports": true, // Support synthetic default imports
+    "sourceMap": true // Include source maps for debugging
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  "include": ["src/**/*"], // Include all TypeScript files in the source directory
+  "exclude": ["node_modules", "dist", "test"] // Exclude unnecessary directories from compilation
 }

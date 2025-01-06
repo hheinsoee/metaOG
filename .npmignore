@@ -2,3 +2,5 @@ yarn-error.log
 src
 rollup.config.js
 docs
+*.tgz
+.vercel
